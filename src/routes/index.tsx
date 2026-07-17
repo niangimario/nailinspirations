@@ -186,13 +186,15 @@ function Landing() {
           <h2 className="text-center text-3xl md:text-4xl">O que dizem quem já comprou</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {[provasocial1, provasocial2, provasocial3].map((p, i) => (
-              <div key={i} className="rounded-3xl border border-primary/20 bg-card shadow-[var(--shadow-soft)] p-4 flex items-center justify-center">
-                <img
-                  src={p}
-                  alt={`Prova social ${i + 1} — cliente satisfeita`}
-                  className="w-full h-auto max-h-[64vh] object-contain rounded-lg"
-                  loading="lazy"
-                />
+              <div key={i} className="overflow-hidden rounded-3xl border border-primary/20 bg-card shadow-[var(--shadow-soft)]">
+                <div className="w-full aspect-[9/16]">
+                  <img
+                    src={p}
+                    alt={`Prova social ${i + 1} — cliente satisfeita`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             ))}
           </div>
