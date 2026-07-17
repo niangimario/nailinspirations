@@ -187,11 +187,11 @@ function Landing() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {[provasocial1, provasocial2, provasocial3].map((p, i) => (
               <div key={i} className="overflow-hidden rounded-3xl border border-primary/20 bg-card shadow-[var(--shadow-soft)]">
-                <div className="w-full aspect-[9/16]">
+                <div className="w-full aspect-[9/16] bg-black">
                   <img
                     src={p}
                     alt={`Prova social ${i + 1} — cliente satisfeita`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain md:object-cover md:object-top"
                     loading="lazy"
                   />
                 </div>
