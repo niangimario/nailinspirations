@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import productHero from "@/assets/produto-100-modelos-unhas.jpg";
+import productHero from "@/assets/produto-100-modelos-unhas.png";
 import bonus1 from "@/assets/bonus1.jpg";
 import bonus2 from "@/assets/bonus2.jpg";
 import provasocial1 from "@/assets/provasocial1.jpg";
